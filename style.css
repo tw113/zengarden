@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'Sketch-Block';
+  src: url("./fonts/Sketch_Block.ttf");
+}
+
+@font-face {
+  font-family: 'Daniel-Normal';
+  src: url("./fonts/daniel.ttf");
+}
+
+@font-face {
+  font-family: 'Daniel-Bold';
+  src: url("./fonts/danielbd.ttf");
+}
+
+@font-face {
+  font-family: 'Isometric';
+  src: url("./fonts/3DIsometric-Regular.ttf");
+}
+
+@use 'variables' as *;
+h2,
+h4 {
+  font-family: "Sketch-Block";
+  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: "Daniel-Bold";
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  border: 10px solid;
+  -o-border-image: url("./images/borderimage.png") 50;
+     border-image: url("./images/borderimage.png") 50;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: white;
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: "Isometric";
+  font-size: 4em;
+  line-height: 1em;
+  letter-spacing: 5px;
+  color: white;
+  display: inline-block;
+  font-weight: normal;
+  padding: 0.3em;
+  border-bottom: 10px solid;
+  -o-border-image: url("./images/borderimage.png") 50;
+     border-image: url("./images/borderimage.png") 50;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.4em;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: rgba(255, 255, 255, 0.8);
+  border: 8px solid;
+  -o-border-image: url("./images/borderimage.png") 50;
+     border-image: url("./images/borderimage.png") 50;
+}
+
+a {
+  font-family: "Sketch-Block";
+  font-size: 1em;
+  line-height: 1em;
+  border-bottom: 8px solid;
+  -o-border-image: url("./images/borderimage.png") 30;
+     border-image: url("./images/borderimage.png") 30;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: border-bottom 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 12px solid;
+}
+
+li a {
+  font-family: "Daniel-Bold";
+  -o-border-image: none;
+     border-image: none;
+  border: none;
+  -webkit-transition: font-size 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+}
+
+li a:hover {
+  -o-border-image: none;
+     border-image: none;
+  border: none;
+  font-size: 1.5em;
+}
+
+.sidebar h3 {
+  font-family: "Daniel-Bold";
+  font-size: 20px;
+  border: 10px solid;
+  -o-border-image: url("./images/borderimage.png") 50;
+     border-image: url("./images/borderimage.png") 50;
+}
+
+.sidebar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar .design-selection {
+  font-family: "Sketch-Block";
+}
+
+.sidebar .design-selection ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.sidebar .design-selection ul li {
+  background: url("./images/buttonbg.png");
+  margin: 6px;
+  padding: 6px;
+}
+
+.sidebar .design-selection ul li a {
+  font-family: "Sketch-Block";
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background: url("./images/background2.jpg") no-repeat center center fixed;
+  padding: 50px;
+}
+
+body {
+  background-color: #1c527c;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2px), linear-gradient(90deg, rgba(255, 255, 255, 0.25) 2px, transparent 2px), linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  font-family: sans-serif;
+  font-size: 85%;
+  color: white;
+  margin: 0;
+  max-width: 1080px;
+  border: 10px solid;
+  -o-border-image: url("./images/borderimage.png") 30;
+     border-image: url("./images/borderimage.png") 30;
+}
+
+section {
+  margin: 1em;
+  padding: 2em;
+  border: 8px solid;
+  -o-border-image: url("./images/borderimage.png") 30;
+     border-image: url("./images/borderimage.png") 30;
+}
+
+.summary {
+  font-family: "Daniel-Bold";
+  font-size: 1.2em;
+}
+
+.summary p {
+  border: none;
+}
+
+.preamble,
+.explanation,
+.participation,
+.requirements {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  margin: 3em;
+}
+
+footer a {
+  font-size: 4em;
+  margin: 0.4em;
+}
+
+.sidebar {
+  border: 8px solid;
+  -o-border-image: url("./images/borderimage.png") 30;
+     border-image: url("./images/borderimage.png") 30;
+}
+
+@media only screen and (max-width: 799px) {
+  html {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .preamble,
+  .explanation,
+  .participation,
+  .requirements {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .preamble h3,
+  .explanation h3,
+  .participation h3,
+  .requirements h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

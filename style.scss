@@ -1,0 +1,94 @@
+@import 'variables';
+@import 'atoms';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: url('./images/background2.jpg') no-repeat center center fixed;
+  padding: 50px;
+}
+
+body {
+  background-color: $background-color;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2px),
+    //horizontal main lines
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25) 2px, transparent 2px),
+    // vertical main lines
+    linear-gradient(rgba(255, 255, 255, 0.10) 1px, transparent 1px),
+    // horizontal sub lines
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.10) 1px,
+        transparent 1px
+      ); // vertical sub lines
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  font-family: $fonts-body-readable;
+  font-size: 85%;
+  color: $text-light;
+  margin: 0;
+  max-width: 1080px;
+  border: 10px solid;
+  border-image: url('./images/borderimage.png') 30;
+}
+
+section {
+  margin: 1em;
+  padding: 2em;
+  border: 8px solid;
+  border-image: url('./images/borderimage.png') 30;
+}
+
+.summary {
+  font-family: $fonts-headline2;
+  font-size: 1.2em;
+
+  p {
+    border: none;
+  }
+}
+
+.preamble,
+.explanation,
+.participation,
+.requirements {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  margin: 3em;
+
+  a {
+    font-size: 4em;
+    margin: 0.4em;
+  }
+}
+
+.sidebar {
+  border: 8px solid;
+  border-image: url('./images/borderimage.png') 30;
+}
+
+@media only screen and (max-width: 799px) {
+  html {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .preamble,
+  .explanation,
+  .participation,
+  .requirements {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+
+    h3 {
+      grid-column: 1 / span 3;
+      grid-row: 1;
+    }
+  }
+}

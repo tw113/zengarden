@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Sketch-Block';
+  src: url('./fonts/Sketch_Block.ttf');
+}
+
+@font-face {
+  font-family: 'Daniel-Normal';
+  src: url('./fonts/daniel.ttf');
+}
+
+@font-face {
+  font-family: 'Daniel-Bold';
+  src: url('./fonts/danielbd.ttf');
+}
+
+@font-face {
+  font-family: 'Isometric';
+  src: url('./fonts/3DIsometric-Regular.ttf');
+}
+
+$fonts-headline: "Sketch-Block";
+$fonts-headline2: "Daniel-Bold";
+$fonts-isometric: 'Isometric';
+$fonts-body: "Daniel-Normal";
+$fonts-body-readable: sans-serif;
+$background-color: #1c527c;
+$primary: #aec7d9;
+$accent1: #226699;
+$text-light: rgb(255, 255, 255);
+$text-light-alpha: rgba(255, 255, 255, 0.8);
